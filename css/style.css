@@ -1,0 +1,270 @@
+/* 
+-----------------
+https://github.com/ardacarofficial/links-website is open source project.
+-----------------
+*/
+
+
+/* From the :root element you can easily change the colors of the design, its size and so on. */
+:root {
+
+    /* You can change the font family in the whole design here. (You need to add the font family to the codes.) */
+    --font-family: 'Inter', sans-serif;
+
+    /* You can change the font size here, is proportional to all texts. */
+    --font-size: 16px;
+
+    /* You can change the background color by typing the color code. (If you do not enter a background-image image, the background-color will be active.) */
+    --background-color: #000;
+    --background-image: url("/img/wallpaper.png");
+
+    /* You can change the frame thickness and color of the picture by typing the number of pixels and the color code. */
+    --image-border-color: #1f232e;
+    --image-border-px: 3px;
+
+    /* You can change the width and size of the picture by typing the number of pixels. */
+    --image-width: 140px;
+    --image-height: 140px;
+
+    /* You can change the colors of the title and description section by typing the color codes. */
+    --title-color: #fff;
+    --description-color: #fff;
+
+    /* You can change the colors of social media icons by changing the color code. */
+    --svg-color: #fff;
+
+    /* You can change the background, text color and active color of the menu by changing the color codes. */
+    --menu-background-color: #1f232e;
+    --menu-text-color: #fff;
+    --menu-active-text-color: #8ecae6;
+
+    /* You can change the button's background, text color and active color by changing the color codes. */
+    --button-background-color: #1f232e;
+    --button-text-color: #fff;
+    --button-text-hover-color: #8ecae6;
+
+    /* You can change the background, text color and active color of the text field by changing the color codes. */
+    --textarea-background-color: #1f232e;
+    --textarea-text-color: #fff;
+    --textarea-link-text-color: #8ecae6;
+
+    /* You can change the background, text color and active color of the footer area by changing the color codes. */
+    --footer-background-color: #1f232e;
+    --footer-link-text-color: #8ecae6;
+    --footer-text-color: #fff;
+}
+
+/* Basis Codes */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--font-family) !important;
+    background-color: var(--background-color);
+    background-image: var(--background-image);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: var(--font-size);
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-1 {
+    color: var(--menu-active-text-color);
+}
+
+#menu-2,
+#menu-3 {
+    color: var(--menu-text-color);
+}
+
+#menu-1-container {
+    display: block;
+}
+
+#menu-2-container,
+#menu-3-container {
+    display: none;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    min-height: calc(100vh - 54px);
+}
+
+/* Logo, Ritle and Description Codes */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: var(--image-width);
+    height: var(--image-height);
+    border: var(--image-border-px) solid var(--image-border-color);
+    border-radius: 50%;
+}
+
+header h1 {
+    color: var(--title-color);
+    font-size: 1.9em;
+    font-weight: var(--font-weight);
+}
+
+header h2 {
+    color: var(--description-color);
+    font-size: 1.5em;
+    font-weight: var(--font-weight);
+    margin-bottom: 10px;
+}
+
+/* Social Media Icons Codes */
+
+.main_icon {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_icon_container {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    padding-bottom: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.main_icon svg {
+    fill: var(--svg-color);
+
+}
+
+.main_icon a {
+    text-decoration: underline;
+}
+
+/* Menu Codes */
+
+nav ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    color: var(--menu-text-color);
+    background-color: var(--menu-background-color);
+    list-style-type: none;
+    text-align: center;
+    border-radius: 3px;
+    margin: 0px 3px 20px;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.40s ease;
+}
+
+/* Text Area Codes */
+
+.main_textarea {
+    color: var(--textarea-text-color);
+    background-color: var(--textarea-background-color);
+    width: 70vh;
+    text-align: center;
+    padding: 12px;
+    border-radius: 3px;
+    margin-bottom: 13px;
+}
+
+.main_textarea a {
+    font-size: 1em;
+    color: var(--textarea-link-text-color);
+    text-decoration: none;
+}
+
+/* Link Buttons Codes */
+
+.main_button {
+    color: var(--button-text-color);
+    background-color: var(--button-background-color);
+    width: 70vh;
+    border-radius: 14px;
+    margin-bottom: 13px;
+}
+
+.main_button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1em;
+    color: var(--button-text-color);
+    min-height: 58px;
+    cursor: pointer;
+}
+
+.main_button:hover {
+    transform: scale(1.02);
+    transition: 0.10s ease;
+}
+
+.main_button a:hover {
+    color: var(--button-text-hover-color);
+    transition: 0.40s ease;
+}
+
+/* Footer Codes */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    background-color: var(--footer-background-color);
+}
+
+footer p {
+    font-size: 1em;
+    color: var(--footer-text-color);
+}
+
+footer a {
+    font-size: 1em;
+    color: var(--footer-link-text-color);
+    text-decoration: none;
+}
+
+/* Responsive Codes */
+
+@media screen and (max-width: 600px) {
+    .main_button {
+        width: 95vw;
+    }
+
+    .main_textarea {
+        width: 95vw;
+    }
+}
