@@ -106,7 +106,7 @@ main {
     min-height: calc(100vh - 54px);
 }
 
-/* Logo, Ritle and Description Codes */
+/* Logo, Title and Description Codes */
 
 header {
     display: flex;
