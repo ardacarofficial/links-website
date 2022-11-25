@@ -1,33 +1,32 @@
-/* 
------------------
-https://github.com/ardacarofficial/links-website is open source project.
------------------
-*/
-
+/* Menu Active Codes */
 
 $(document).ready(function(){
-    $("#menu-1").click(function(){
-        $("#menu-1").css("color", "var(--menu-active-text-color)");
-        $("#menu-2").css("color", "var(--menu-text-color)");
-        $("#menu-3").css("color", "var(--menu-text-color)");
-        $("#menu-1-container").show();
-        $("#menu-2-container").hide();
-        $("#menu-3-container").hide();
-    });
-    $("#menu-2").click(function(){
-        $("#menu-1").css("color", "var(--menu-text-color)");
-        $("#menu-2").css("color", "var(--menu-active-text-color)");
-        $("#menu-3").css("color", "var(--menu-text-color)");
-        $("#menu-1-container").hide();
-        $("#menu-2-container").show();
-        $("#menu-3-container").hide();
-    });
-    $("#menu-3").click(function(){
-        $("#menu-1").css("color", "var(--menu-text-color)");
-        $("#menu-2").css("color", "var(--menu-text-color)");
-        $("#menu-3").css("color", "var(--menu-active-text-color)");
-        $("#menu-1-container").hide();
-        $("#menu-2-container").hide();
-        $("#menu-3-container").show();
-    });
+  
+  $("#header_nav_menu_item_1").click(function(){
+      $("#header_nav_menu_item_1").css("color", "var(--menu_active_text_color)");
+      $("#header_nav_menu_item_2").css("color", "var(--menu_text_color)");
+      $("#header_nav_menu_item_3").css("color", "var(--menu_text_color)");
+      $("#main_section_container_1").css("display", "flex");
+      $("#main_section_container_2").css("display", "none");
+      $("#main_section_container_3").css("display", "none");
+  });
+
+  $("#header_nav_menu_item_2").click(function(){
+    $("#header_nav_menu_item_1").css("color", "var(--menu_text_color)");
+    $("#header_nav_menu_item_2").css("color", "var(--menu_active_text_color)");
+    $("#header_nav_menu_item_3").css("color", "var(--menu_text_color)");
+    $("#main_section_container_1").css("display", "none");
+    $("#main_section_container_2").css("display", "flex");
+    $("#main_section_container_3").css("display", "none");
+  });
+
+  $("#header_nav_menu_item_3").click(function(){
+    $("#header_nav_menu_item_1").css("color", "var(--menu_text_color)");
+    $("#header_nav_menu_item_2").css("color", "var(--menu_text_color)");
+    $("#header_nav_menu_item_3").css("color", "var(--menu_active_text_color)");
+    $("#main_section_container_1").css("display", "none");
+    $("#main_section_container_2").css("display", "none");
+    $("#main_section_container_3").css("display", "flex");
+  });
+  
 });
