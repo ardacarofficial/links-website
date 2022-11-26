@@ -1,12 +1,9 @@
 # Demo
 
-If you want to see the demos live, you can reach them from the [ardacarofficial.github.io/links-website/](https://ardacarofficial.github.io/links-website/ "ardacarofficial.github.io/links-website/") link.
+If you want to see the demo, you can reach the demo by [clicking here](https://ardacarofficial.github.io/links-website/ "ardacarofficial.github.io/links-website/") link.
 
-![Demo 1](https://raw.githubusercontent.com/ardacarofficial/ardacarofficial.github.io/main/links-website/img/demo1.jpg)
+![Demo 1](https://ardacarofficial.github.io/links-website/img/demo-img.png)
 
-![Demo 2](https://raw.githubusercontent.com/ardacarofficial/ardacarofficial.github.io/main/links-website/img/demo2.jpg)
-
-![Demo 3](https://raw.githubusercontent.com/ardacarofficial/ardacarofficial.github.io/main/links-website/img/demo3.jpg)
 
 # Install
 
