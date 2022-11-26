@@ -162,7 +162,7 @@ main {
 }
 
 .main_a_item {
-  margin-top: 1.5em;
+  margin-top: 1em;
   text-decoration: none;
 }
 
@@ -173,7 +173,7 @@ main {
   color: var(--button_text_color);
   background-color: var(--button_background_color);
   width: 41em;
-  margin-top: 1.5em;
+  margin-top: 1em;
   padding: 0.8em;
   border-radius: 0.3em;
   min-height: 3.7em;
@@ -196,7 +196,7 @@ main {
 }
 
 .main_small_a_item {
-  margin-top: 1.5em;
+  margin-top: 1em;
   text-decoration: none;
 }
 
