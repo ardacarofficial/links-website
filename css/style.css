@@ -76,6 +76,14 @@ body {
   align-items: center;
 }
 
+.flex_no_wrap_row_center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Logo, Title and Description Codes */
 
 .header_img {
@@ -135,16 +143,22 @@ body {
 }
 
 .header_nav_menu_list {
-  padding-top: 1.5em;
+  padding-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .header_nav_menu_item {
   color: var(--menu_text_color);
   background-color: var(--menu_background_color);
-  border-radius: 0.3em;
+  text-align: center;
+  list-style-type: none;
+  cursor: pointer;
   padding: 0.5em;
+  border-radius: 0.3em;
   cursor: pointer;
   transition: 0.10s ease;
+  font-size: 1.1em;
 }
 
 .header_nav_menu_item + .header_nav_menu_item {
