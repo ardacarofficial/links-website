@@ -134,13 +134,11 @@ body {
   color: var(--menu_active_text_color);
 }
 
-#header_nav_menu_item_2 {
-  color: var(--menu_text_color);
-}
-
+#header_nav_menu_item_2,
 #header_nav_menu_item_3 {
   color: var(--menu_text_color);
 }
+
 
 .header_nav_menu_list {
   padding-top: 1em;
