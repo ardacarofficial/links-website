@@ -44,7 +44,7 @@
   /* You can change the background, text color and active color of the footer area by changing the color codes. */
   --footer_background_color: #1d1e24;
   --footer_text_color: #fff;
-  --footer_link-text_color: #d7e04f;
+  --footer_link_text_color: #d7e04f;
 }
 
 /* Basic Codes */
@@ -243,7 +243,7 @@ main {
 }
 
 .footer_a_item {
-  color: var(--footer_link-text_color);
+  color: var(--footer_link_text_color);
   text-decoration: none;
 }
 
