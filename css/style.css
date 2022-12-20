@@ -53,7 +53,7 @@ body {
   font: var(--font_size) var(--font_family);
   font-weight: 400;
   line-height: 1.5;
-  background: var(--background_color) var(--background_image) no-repeat center;
+  background: var(--background_color) var(--background_image) repeat right top;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -96,16 +96,19 @@ body {
   border: var(--image_border_px) solid var(--image_border_color);
   border-radius: 50%;
   margin-bottom: 0.5em;
+  box-shadow: 5px 5px 5px lightgray;
 }
 
 .header_text h1 {
   color: var(--title_color);
   font-size: 2em;
+  text-shadow: 5px 5px 2px lightgrey;
 }
 
 .header_text h2 {
   color: var(--description_color);
   font-size: 1.5em;
+  text-shadow: 2px 2px 2px lightgrey;
 }
 
 /* Social Media Icons Codes */
@@ -176,6 +179,7 @@ main {
 .main_a_item {
   margin-top: 1em;
   text-decoration: none;
+  box-shadow: 5px 5px 5px lightgrey;
 }
 
 .main_text_item {
@@ -190,6 +194,7 @@ main {
   border-radius: 0.3em;
   min-height: 3.7em;
   text-align: center;
+  box-shadow: 5px 5px 5px lightgrey;
 }
 
 .main_button_item {
@@ -249,7 +254,7 @@ main {
 
 /* Responsive Codes */
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
   .main_text_item {
     width: 92vw;
   }
@@ -261,4 +266,12 @@ main {
   .main_button_item {
     width: 92vw;
   }
+}
+
+.parallax {
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
