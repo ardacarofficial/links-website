@@ -9,7 +9,8 @@
 
   /* You can change the background color by typing the color code. (If you do not enter a background-image image, the background-color will be active.) */
   --background_color: #000;
-  --background_image: url("../img/wallpaper.jpeg");
+  /* --background_image: url("../img/wallpaper.jpeg"); */
+  --background_image: url("../img/mandarin_duck.jpg");
 
   /* You can change the frame thickness and color of the picture by typing the number of pixels and the color code. */
   --image_border_color: #1f232e;
@@ -45,6 +46,9 @@
   --footer_background_color: #1d1e24;
   --footer_text_color: #fff;
   --footer_link_text_color: #d7e04f;
+
+  /* You can define a box shadow to make blocks look like paper cards ~~ Custom */
+  --box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.5), 6px 6px 20px 0 rgba(0,0,0,0.25);
 }
 
 /* Basic Codes */
@@ -53,7 +57,7 @@ body {
   font: var(--font_size) var(--font_family);
   font-weight: 400;
   line-height: 1.5;
-  background: var(--background_color) var(--background_image) repeat right top;
+  background: var(--background_color) var(--background_image) repeat left bottom;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -96,7 +100,7 @@ body {
   border: var(--image_border_px) solid var(--image_border_color);
   border-radius: 50%;
   margin-bottom: 0.5em;
-  box-shadow: 5px 5px 5px lightgray;
+  box-shadow: var(--box-shadow);
 }
 
 .header_text h1 {
@@ -179,7 +183,7 @@ main {
 .main_a_item {
   margin-top: 1em;
   text-decoration: none;
-  box-shadow: 5px 5px 5px lightgrey;
+  box-shadow: var(--box-shadow);
 }
 
 .main_text_item {
@@ -194,14 +198,14 @@ main {
   border-radius: 0.3em;
   min-height: 3.7em;
   text-align: center;
-  box-shadow: 5px 5px 5px lightgrey;
+  box-shadow: var(--box-shadow);
 }
 
 .main_button_item {
   color: var(--button_text_color);
   background-color: var(--button_background_color);
   width: 41em;
-  border-radius: 1em;
+  /* border-radius: 1em; */
   min-height: 3.7em;
   text-align: center;
   cursor: pointer;
