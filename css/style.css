@@ -106,13 +106,13 @@ body {
 .header_text h1 {
   color: var(--title_color);
   font-size: 2em;
-  text-shadow: 5px 5px 2px lightgrey;
+  text-shadow: 5px 5px 2px black, 6px 6px 25px darkgray, 7px 7px 10px lightgray;
 }
 
 .header_text h2 {
   color: var(--description_color);
   font-size: 1.5em;
-  text-shadow: 2px 2px 2px lightgrey;
+  text-shadow: 2px 2px 3px black, 3px 3px 25px darkgray, 5px 5px 10px lightgray;
 }
 
 /* Social Media Icons Codes */
