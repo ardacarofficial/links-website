@@ -23,7 +23,3 @@ If you have a suggestion to make this better, please fork the repository and cre
 
 # License
 Distributed under the MIT license. See [LICENSE](https://github.com/ardacarofficial/links-website/blob/main/LICENSE "LICENSE") file for more information.
-
-# Contact
-
-Website: [official.ardacar.com](https://official.ardacar.com/ "official.ardacar.com")
