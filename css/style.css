@@ -261,4 +261,10 @@ main {
   .main_button_item {
     width: 92vw;
   }
+  
+  .header_h_item {
+    width: 92vw;
+    text-align: center;
+  }
+  
 }
